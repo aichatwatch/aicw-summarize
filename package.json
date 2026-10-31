@@ -10,7 +10,7 @@
     "safety": "node scripts/safety-check.js",
     "test": "npm run validate && npm run safety"
   },
-  "author": "Eugene Mironichev - www.aicw.io",
+  "author": "Eugene Mironichev - aichatwatch.com",
   "license": "MIT",
   "devDependencies": {
     "terser": "^5.37.0"

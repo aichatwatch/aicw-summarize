@@ -4,7 +4,7 @@ A lightweight, standalone widget that adds a floating "Summarize with AI" and "S
 
 **Live Demo**
 
-- Visit [www.aicw.io](https://aicw.io?utm_source=github) to see it live
+- Visit [aichatwatch.com](https://aichatwatch.com?utm_source=github) to see it live
 
 **Video:**
 
@@ -17,7 +17,7 @@ A lightweight, standalone widget that adds a floating "Summarize with AI" and "S
 Add this single line to your HTML, right before `</body>`:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/aicw-io/aicw-summarize@latest/dist/aicw-summarize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aichatwatch/aicw-summarize@latest/dist/aicw-summarize.min.js"></script>
 ```
 
 That's it. A floating "Summarize" button will appear on the right side of the page. Clicking it opens a popup with links to AI services (ChatGPT, Gemini, Claude, Perplexity, Grok) and share buttons (WhatsApp, Telegram, X, Gmail, LinkedIn). The widget automatically detects dark/light mode from your browser and site settings.
@@ -27,7 +27,7 @@ This uses jsDelivr's `@latest` which points to the most recent GitHub release. A
 To pin to a specific release (recommended for production):
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/aicw-io/aicw-summarize@v20260416.162431/dist/aicw-summarize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aichatwatch/aicw-summarize@v20260604.190104/dist/aicw-summarize.min.js"></script>
 ```
 
 ## How It Works
@@ -133,13 +133,13 @@ Any explicit color attribute overrides the auto-detected theme colors. Use these
 ### Minimal (all defaults)
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/aicw-io/aicw-summarize@latest/dist/aicw-summarize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aichatwatch/aicw-summarize@latest/dist/aicw-summarize.min.js"></script>
 ```
 
 ### Custom position and custom label
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/aicw-io/aicw-summarize@latest/dist/aicw-summarize.min.js"
+<script src="https://cdn.jsdelivr.net/gh/aichatwatch/aicw-summarize@latest/dist/aicw-summarize.min.js"
   data-position="bottom"
   data-label="Summarize"
 ></script>
@@ -150,7 +150,7 @@ Any explicit color attribute overrides the auto-detected theme colors. Use these
 Dark mode is automatic — no configuration needed. The widget reads the browser's `prefers-color-scheme` and checks `localStorage.theme`. To use a different localStorage variable:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/aicw-io/aicw-summarize@latest/dist/aicw-summarize.min.js"
+<script src="https://cdn.jsdelivr.net/gh/aichatwatch/aicw-summarize@latest/dist/aicw-summarize.min.js"
   data-theme-storage="darkMode=true"
 ></script>
 ```
@@ -158,7 +158,7 @@ Dark mode is automatic — no configuration needed. The widget reads the browser
 To disable auto-detection and force light mode:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/aicw-io/aicw-summarize@latest/dist/aicw-summarize.min.js"
+<script src="https://cdn.jsdelivr.net/gh/aichatwatch/aicw-summarize@latest/dist/aicw-summarize.min.js"
   data-auto-theme="false"
 ></script>
 ```
@@ -166,7 +166,7 @@ To disable auto-detection and force light mode:
 ### Custom colors (manual dark theme override)
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/aicw-io/aicw-summarize@latest/dist/aicw-summarize.min.js"
+<script src="https://cdn.jsdelivr.net/gh/aichatwatch/aicw-summarize@latest/dist/aicw-summarize.min.js"
   data-auto-theme="false"
   data-bg-color="rgba(30,30,30,0.95)"
   data-text-color="#e5e7eb"
@@ -182,7 +182,7 @@ To disable auto-detection and force light mode:
 Use `|` to separate multiple prompt variations — one is picked randomly each time a user clicks an AI service:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/aicw-io/aicw-summarize@latest/dist/aicw-summarize.min.js"
+<script src="https://cdn.jsdelivr.net/gh/aichatwatch/aicw-summarize@latest/dist/aicw-summarize.min.js"
   data-prompt="Summarize this page:|Explain this article in simple terms:|Give me the key takeaways from:"
 ></script>
 ```
@@ -190,7 +190,7 @@ Use `|` to separate multiple prompt variations — one is picked randomly each t
 ### AI-only (no share buttons)
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/aicw-io/aicw-summarize@latest/dist/aicw-summarize.min.js"
+<script src="https://cdn.jsdelivr.net/gh/aichatwatch/aicw-summarize@latest/dist/aicw-summarize.min.js"
   data-share="false"
 ></script>
 ```
@@ -198,7 +198,7 @@ Use `|` to separate multiple prompt variations — one is picked randomly each t
 ### Share-only (no AI)
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/aicw-io/aicw-summarize@latest/dist/aicw-summarize.min.js"
+<script src="https://cdn.jsdelivr.net/gh/aichatwatch/aicw-summarize@latest/dist/aicw-summarize.min.js"
   data-summarize="false"
   data-share-services="whatsapp,x,linkedin,copy"
 ></script>
@@ -207,7 +207,7 @@ Use `|` to separate multiple prompt variations — one is picked randomly each t
 ### Specific AI services + custom prompt
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/aicw-io/aicw-summarize@latest/dist/aicw-summarize.min.js"
+<script src="https://cdn.jsdelivr.net/gh/aichatwatch/aicw-summarize@latest/dist/aicw-summarize.min.js"
   data-services="claude,chatgpt"
   data-prompt="Explain this article in simple terms:"
   data-share="false"
@@ -219,7 +219,7 @@ Use `|` to separate multiple prompt variations — one is picked randomly each t
 Use `data-paths` with regex patterns (comma-separated). For example, we want to show only on exact top-level paths like `/meditate/`, `/visuals/` but not on their children like `/meditate/calm/` or `/visuals/calming`:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/aicw-io/aicw-summarize@latest/dist/aicw-summarize.min.js"
+<script src="https://cdn.jsdelivr.net/gh/aichatwatch/aicw-summarize@latest/dist/aicw-summarize.min.js"
   data-paths="^/$,^/meditate/$,^/visuals/$,^/games/$"
 ></script>
 ```
@@ -229,7 +229,7 @@ This shows the widget on `/`, `/meditate/`, `/visuals/`, `/games/` but **not** o
 Show on all article pages:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/aicw-io/aicw-summarize@latest/dist/aicw-summarize.min.js"
+<script src="https://cdn.jsdelivr.net/gh/aichatwatch/aicw-summarize@latest/dist/aicw-summarize.min.js"
   data-paths="^/blog/"
 ></script>
 ```
@@ -237,7 +237,7 @@ Show on all article pages:
 ### Left sidebar with brand colors
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/aicw-io/aicw-summarize@latest/dist/aicw-summarize.min.js"
+<script src="https://cdn.jsdelivr.net/gh/aichatwatch/aicw-summarize@latest/dist/aicw-summarize.min.js"
   data-position="left"
   data-accent-color="#4f46e5"
   data-button-bg-color="#4f46e5"
@@ -256,7 +256,7 @@ If you prefer to self-host instead of using the CDN:
 ### Build
 
 ```bash
-git clone https://github.com/aicw-io/aicw-summarize.git
+git clone https://github.com/aichatwatch/aicw-summarize.git
 cd aicw-summarize
 npm install
 npm run build
@@ -289,4 +289,4 @@ npm run validate
 
 ## License
 
-MIT - made by [AICW](https://www.aicw.io)
+MIT - made by [AI Chat Watch](https://aichatwatch.com)
