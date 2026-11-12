@@ -1,0 +1,96 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "AICW Summarize Widget",
+  "description": "A small widget that adds a floating Summarize with AI and Share button to your website with one script tag.",
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#667eea"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/aichatwatch/aicw-summarize"
+      },
+      {
+        "label": "Project page",
+        "href": "https://aichatwatch.com/summarize-widget/"
+      }
+    ],
+    "primary": {
+      "label": "Install",
+      "href": "/installation"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/aichatwatch"
+    },
+    "links": [
+      {
+        "header": "AI Chat Watch",
+        "items": [
+          {
+            "label": "AI Chat Watch (AICW)",
+            "href": "https://aichatwatch.com"
+          }
+        ]
+      },
+      {
+        "header": "Legal",
+        "items": [
+          {
+            "label": "Privacy",
+            "href": "https://aichatwatch.com/privacy/"
+          }
+        ]
+      }
+    ]
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "mcp"
+    ]
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get started",
+        "pages": [
+          "index",
+          "quickstart",
+          "installation",
+          "how-it-works"
+        ]
+      },
+      {
+        "group": "Guides",
+        "pages": [
+          "layout-and-position",
+          "ai-services-and-prompts",
+          "share-services",
+          "dark-mode-and-colors",
+          "show-on-selected-pages"
+        ]
+      },
+      {
+        "group": "Reference",
+        "pages": [
+          "examples",
+          "privacy"
+        ]
+      },
+      {
+        "group": "Help",
+        "pages": [
+          "troubleshooting",
+          "build-and-test"
+        ]
+      }
+    ]
+  }
+}
